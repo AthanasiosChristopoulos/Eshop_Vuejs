@@ -6,7 +6,9 @@
           <div class="info">
             <p>{{data.title}}</p>
           </div>
-          <div></div>
+          <div class="buyQuantity">
+            <i class="bi bi-dash"></i>
+          </div>
         </div>
         
       </div>
@@ -129,16 +131,17 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      align-items: center;
+      border: 3px solid greenyellow;
       
     }
     .products{
       border: 3px solid rgb(181, 120, 6);
       border-radius: 6px;
-      width: 100px;
-      height: 150px;
       margin: 10px;
       color:aliceblue;
-      position: relative;
+      display: flex;
+      flex-direction: column;
 
     }
 
@@ -198,5 +201,10 @@
     .updateField {
       display: flex;
       justify-content: row;
+    }
+    .buyQuantity {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
     }
   </style>
